@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* 🌍 Estilos base del proyecto */
+@layer base {
+  html {
+    font-family: system-ui, sans-serif;
+  }
+
+  body {
+    @apply bg-slate-900 text-slate-100 antialiased;
+  }
+}
+
+/* 🧩 Componentes reutilizables */
+@layer components {
+  .btn {
+    @apply rounded-xl px-6 py-3 font-semibold transition active:scale-95;
+  }
+
+  .btn-primary {
+    @apply bg-indigo-600 text-white hover:bg-indigo-500;
+  }
+
+  .btn-danger {
+    @apply bg-rose-600 text-white hover:bg-rose-500;
+  }
+}
+
+/* 🛠 Utilidades personalizadas */
+@layer utilities {
+  .glass {
+    @apply bg-white/10 backdrop-blur border border-white/20;
+  }
+
+  .bg-vuejs {
+    @apply bg-[#42b883];
+  }
+
+  .text-vuejs {
+    @apply bg-[#35495e];
+  }
+}
