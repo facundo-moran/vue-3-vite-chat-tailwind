@@ -1,6 +1,34 @@
-# indecision-app
+# Chat App with Vue 3 - Yes/No API response
 
-This template should help get you started developing with Vue 3 in Vite.
+Se trata de mi primer app hecha con el poder de Vue 3. La idea es implementando conceptos de vue 3 Composition API.
+
+## Cositas practicadas en esta simple App
+
+### Escuchar y emitir eventos.
+
+- Vue permite como todo framework que sus componentes puedan escuchar eventos emitidos por otros. Ejemplo en el componente ui "MessageInbox.vue" especificamos "@keyup.enter="emitInboxMessage" para emitir nuevo el mensaje del input.
+
+### Enviar propiedades.
+
+- Vue permite ademas de manera sencilla y tipada definir que propiedades van a necesitas nuestros componentes. Ejemplo en el componente ui "MessageContainer.vue" con ayuda de "defineProps" especificamos que necesitamos una lista de tipo "IChatMessage" obligatoria para renderizar.
+
+### Reactividad
+
+- Vue es reactivo y una de las herramientas mas utilizadas para definir estado reactivo es con "ref()" lo que permite trabajar con signals
+
+### Composables
+
+- Vue se inspira en react y nos permite crear "composables" que son funciones que suelen comenzar su identificador con la palabra "use". Ejemplo en el composable "useChat" donde definimos "estado reactivo", ya que tenemos nuestra lista de mensajes del Chat, entre la lógica de este simple Chat App.
+
+### Tailwind
+
+- Tailwind version 4, instalado siguiente la guia oficinal de Vite desde su página oficial. Es el gestor de estilos css y tambien tomamos el template de el chat basado en estilos tailwindcss.
+
+### Peticiones HTTP y Separación en componentes
+
+- Nos comunicamos con la famosa API Yes/No response utilizando solo fetch API nativo. Tambien intentamos separara en 3 componentes distintos a nuestro template de Chat: "ChatBubble.vue", "MessageContainer.vue" y "MessageInBox.vue".
+
+### Referencias al DOM.
 
 ## Recommended IDE Setup
 
@@ -19,25 +47,24 @@ This template should help get you started developing with Vue 3 in Vite.
 
 TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+## Clona y Ejecuta por ti mismo
 
 ```sh
-npm install
+# Asegurate de usar una version de Node.js actualiada
+git clone + npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Compila con Hot-Reload en desarrollo
 
 ```sh
+# haz tus pruebas
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+### Type-Check, compila and Minify para el /dist de produccion
 
 ```sh
+# Esta app fue hosteada gratuitamente usando netlify
 npm run build
 ```
 
