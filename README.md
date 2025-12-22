@@ -30,6 +30,8 @@ Se trata de mi primer app hecha con el poder de Vue 3. La idea es implementando 
 
 ### Referencias al DOM.
 
+- Utilizamos "ref" en un elemento HTML para hacer una referencia, valga la redundancia, hacia el mismo dentro del archivo "MessageContainer.vue". Lo interesante es utilizar el mismo nombre de la variable que de la referencia en el template y a su vez es importante utilizar "ref()" para convertir el valor en signal. Las referencias HTML no se inicializan automaticamente dentro del script setup 💡
+
 ## Recommended IDE Setup
 
 [VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
