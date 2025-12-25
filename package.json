@@ -13,6 +13,7 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
     "test:unit": "vitest",
+    "test": "vitest --watch=false",
     "lint:oxlint": "oxlint . --fix -D correctness --ignore-path .gitignore",
     "lint:eslint": "eslint . --fix --cache",
     "lint": "run-s lint:*",
