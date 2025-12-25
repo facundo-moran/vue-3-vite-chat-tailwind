@@ -76,6 +76,16 @@ npm run build
 npm run lint
 ```
 
+### Integrando Vitest de manera manual
+
+```sh
+# Crear la rama test 
+$ git switch -c test/add-vitest
+
+# Instalar vitest (desarrollo)
+$ npm install -D vitest
+```
+
 ### Integrando estilos CSS
 
 - [Instalacion Bootstrap 5.3.8 CSS CDN & Tailwind 4.1 para Vite](https://chatgpt.com/?utm_match=e&gad_campaignid=22634265511)
@@ -84,8 +94,10 @@ npm run lint
 
 - [Template de chat reutilizado](https://www.creative-tim.com/twcomponents/component/chat-layout)
 
-###
-
-API Yes-No
+### API Yes-No
 
 - [API para respuesta Yes or Not con gifs](https://yesno.wtf/api)
+
+### Guia de Vitest 
+
+- [Vitest - Guia oficial](https://vitest.dev/guide/)
