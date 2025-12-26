@@ -62,14 +62,14 @@ const { counter, decremento, incremento, modificarContador, sqrCounter, } = useC
 <template>
 
   <div class="w-full max-w-md rounded-2xl bg-slate-800 p-8 shadow-xl border border-slate-700 text-center">
-    <h1 class="text-4xl font-extrabold text-white mb-4">
+    <h2 class="text-4xl font-extrabold text-white mb-4">
       Counter
       <span class="text-indigo-400">{{ counter }}</span>
-    </h1>
+    </h2>
 
     <p class="text-slate-300 mb-6">
       Counter al cuadrado:
-      <span
+      <span data-testid="cuadrado-contador"
         class="ml-2 inline-flex items-center rounded-full bg-emerald-500/20 px-3 py-1 text-sm font-semibold text-emerald-400"
       >
         {{ sqrCounter }}
