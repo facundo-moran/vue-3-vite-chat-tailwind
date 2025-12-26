@@ -84,6 +84,9 @@ $ git switch -c test/add-vitest
 
 # Instalar vitest (desarrollo)
 $ npm install -D vitest
+
+# Instalar herramientas para testear componentes de Vue 3
+$ npm install -D @vue/test-utils
 ```
 
 ### Integrando estilos CSS
